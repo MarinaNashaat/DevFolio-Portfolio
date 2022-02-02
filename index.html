@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 
@@ -14,15 +13,16 @@
 
 <body>
   <!-- Header Section Start -->
-   <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-       <h1 class="navbar-head m-0">
-         <a class="text-light" href="#">DevFolio</a>
-       </h1> 
-       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars text-white"></i>
-      </button>
+        <h1 class="navbar-head m-0">
+          <a class="text-light" href="#">DevFolio</a>
+        </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-white"></i>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -40,32 +40,7 @@
             <li class="nav-item">
               <a class="nav-link position-relative text-uppercase" href="#blog">Blog</a>
             </li>
-            <li class="nav-item dropdown dropdown-nav-link">
-              <a class="nav-link position-relative dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu parent-drop-down" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Drop Down 1</a></li>
 
-                <li class="dropend">
-                  <a class="dropdown-item dropdown-toggle" id="navbarSubDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Deep Drop Down
-                  </a>
-                  <ul class="dropdown-menu drop-sub-menu" aria-labelledby="#navbarSubDropdown" >
-                    <li><a  class="dropdown-item" href="#">Deep Drop Down 1</a></li>
-                    <li><a  class="dropdown-item" href="#">Deep Drop Down 2</a></li>
-                    <li><a  class="dropdown-item" href="#">Deep Drop Down 3</a></li>
-                    <li><a  class="dropdown-item" href="#">Deep Drop Down 4</a></li>
-                    <li><a  class="dropdown-item" href="#">Deep Drop Down 5</a></li>
-                  </ul>
-                </li>
-                
-                <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
-                <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
-                <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
-              
-              </ul>
-            </li>
             <li class="nav-item">
               <a class="nav-link position-relative text-uppercase" href="#contact-us">Contact</a>
             </li>
@@ -86,9 +61,7 @@
         class="home-content w-100 h-100 position-absolute start-0 top-0 position-absolute  d-flex justify-content-center align-items-center text-center">
         <div class="container ">
           <h1 class="mb-4 home-name text-white">I am Morgan Freeman</h1>
-          <p class="home-title">
-            |
-          </p>
+          <span id="typed" class="home-title"></span>
         </div>
       </div>
 
@@ -329,7 +302,7 @@
                   </span>
                 </div>
                 <div class="counter-number">
-                  <p class="mb-0">450</p>
+                  <p class="mb-0 counter">450</p>
                   <span>WORKS COMPLETED </span>
                 </div>
               </div>
@@ -342,7 +315,7 @@
                   </span>
                 </div>
                 <div class="counter-number">
-                  <p class="mb-0">25</p>
+                  <p class="mb-0 counter">25</p>
                   <span>YEARS OF EXPERIENCE </span>
                 </div>
               </div>
@@ -355,7 +328,7 @@
                   </span>
                 </div>
                 <div class="counter-number">
-                  <p class="mb-0">550</p>
+                  <p class="mb-0 counter">550</p>
                   <span>TOTAL CLIENTS </span>
                 </div>
               </div>
@@ -368,7 +341,7 @@
                   </span>
                 </div>
                 <div class="counter-number">
-                  <p class="mb-0">48</p>
+                  <p class="mb-0 counter">48</p>
                   <span>AWARD WON </span>
                 </div>
               </div>
@@ -893,7 +866,27 @@
   </footer>
   <!-- Footer Section End -->
 
+  <button id="btnUp" class="btn rounded-circle">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- loader page -->
+  <div id="loader">
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="plugins/typed-JS/js/typed.min.js"></script>
+  <script src="plugins/counterUp/js/waypoints.min.js"></script>
+  <script src="plugins/counterUp/js/jquery.counterup.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
