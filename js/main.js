@@ -64,5 +64,8 @@ $(document).ready(function () {
     $("#loader").fadeOut(1000, function () {
         $("body").css("overflow-y", "auto")
     });
-
+    /* /////////navbar on mobile */
+    $(".navbar-nav a").on('click', function () {
+        $(".navbar-collapse, .navbar-toggler").removeClass("show");
+    });
 });
